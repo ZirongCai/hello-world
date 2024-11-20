@@ -1,4 +1,4 @@
-name: Status Check Example
+name: status-check
 
 on:
   pull_request:  # 针对 PR 事件触发
