@@ -1,3 +1,3 @@
 
 clean:
-    echo "1d"
+    echo "1dm"
