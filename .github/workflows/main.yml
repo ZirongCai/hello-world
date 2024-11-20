@@ -1,11 +1,6 @@
 name: Auto Merge PR
 
 on:
-  pull_request:
-    types:
-      - labeled
-      - synchronize
-      - ready_for_review
   check_suite:
     types:
       - completed
