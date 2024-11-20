@@ -1,0 +1,19 @@
+name: Auto Trigger After Status Check
+
+on:
+  status:
+    types:
+      - success
+
+jobs:
+  trigger-after-status-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check if it's 'status-check'
+        if: ${{ github.event.context == 'status-check' }} # 只监听特定的状态检查
+        run: echo "status-check action completed successfully. Triggering subsequent actions."
+
+      - name: Perform Next Action
+        if: ${{ github.event.context == 'status-check' }}
+        run: echo "Performing subsequent steps after status-check success."
