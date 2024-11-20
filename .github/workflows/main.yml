@@ -2,8 +2,7 @@ name: Auto Merge PR
 
 on:
   check_run:
-    types:
-      - [created, requested_action, rerequested, completed]
+    types: [rerequested, completed]
 
 jobs:
   auto-merge:
