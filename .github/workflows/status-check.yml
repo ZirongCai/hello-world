@@ -3,7 +3,7 @@ name: Status Check Example
 on:
   pull_request:  # 针对 PR 事件触发
     branches:
-      - main     # 限制为对 main 分支的更改
+      - master     # 限制为对 main 分支的更改
 
 jobs:
   status-check:
