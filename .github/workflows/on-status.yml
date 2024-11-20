@@ -1,9 +1,6 @@
 name: Auto Trigger After Status Check
 
-on:
-  status:
-    types:
-      - success
+on: status
 
 jobs:
   trigger-after-status-check:
